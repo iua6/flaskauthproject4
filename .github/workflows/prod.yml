@@ -39,7 +39,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-            images: iua6/flaskauthproject3
+          images: iua6/flaskauthproject3
+
 
       - name: Build and push
         uses: docker/build-push-action@v2
