@@ -2,12 +2,12 @@
 
 [![Production Workflow](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml/badge.svg)](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml)
 
-* [Production Deployment](https://kwilliam-prod.herokuapp.com/)
+* [Production Deployment](https://iua6-prod2.herokuapp.com/)
 
 
 [![Development Workflow](https://github.com/kaw393939/docker_flask/actions/workflows/dev.yml/badge.svg)](https://github.com/kaw393939/docker_flask/actions/workflows/dev.yml)
 
-* [Developmental Deployment](https://kwilliam-dev.herokuapp.com/)
+* [Developmental Deployment](https://iua6-dev2.herokuapp.com/)
 
 ## Setting up CI/CD
 
