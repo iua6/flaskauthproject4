@@ -26,6 +26,7 @@ def after_request_logging(response):
         return response
     return response
 
+
 @log_con.before_app_first_request
 def setup_logs():
 
