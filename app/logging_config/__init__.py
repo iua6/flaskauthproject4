@@ -26,7 +26,6 @@ def after_request_logging(response):
         return response
     return response
 
-
 @log_con.before_app_first_request
 def setup_logs():
 
@@ -66,6 +65,13 @@ LOGGING_CONFIG = {
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'standard',
             'filename': os.path.join(config.Config.LOG_DIR,'myapp.log'),
+            'maxBytes': 10000000,
+            'backupCount': 5,
+        },
+        'file.handler.response': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'formatter': 'standard',
+            'filename': os.path.join(config.Config.LOG_DIR,'response.log'),
             'maxBytes': 10000000,
             'backupCount': 5,
         },
@@ -121,6 +127,11 @@ LOGGING_CONFIG = {
         },
         'myApp': {  # if __name__ == '__main__'
             'handlers': ['file.handler.myapp'],
+            'level': 'DEBUG',
+            'propagate': False
+        },
+        'Response': {  # if __name__ == '__main__'
+            'handlers': ['file.handler.response'],
             'level': 'DEBUG',
             'propagate': False
         },
