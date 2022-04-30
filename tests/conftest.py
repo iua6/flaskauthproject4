@@ -1,6 +1,5 @@
 """This makes the test configuration setup"""
 # pylint: disable=redefined-outer-name
-import logging
 import os
 
 import pytest
@@ -29,9 +28,10 @@ def application():
 
 @pytest.fixture()
 def add_user(application):
+    """user"""
     with application.app_context():
         #new record
-        user = User('keith@webizly.com', 'testtest')
+        user = User('iua6@njit.edu', 'testtest')
         db.session.add(user)
         db.session.commit()
 
