@@ -2,12 +2,12 @@
 
 [![Production Workflow 1](https://github.com/iua6/flaskauthproject3/actions/workflows/prod.yml/badge.svg)](https://github.com/iua6/flaskauthproject3/actions/workflows/prod.yml)
 
-* [Production Deployment](https://iua6-prodauth.herokuapp.com/)
+* [Production Deployment](https://iua6-prodauth4.herokuapp.com/)
 
 
 [![Development Workflow 3.8](https://github.com/iua6/flaskauthproject3/actions/workflows/dev.yml/badge.svg)](https://github.com/iua6/flaskauthproject3/actions/workflows/dev.yml)
 
-* [Developmental Deployment](https://iua6-devauth.herokuapp.com/)
+* [Developmental Deployment](https://iua6-devauth4.herokuapp.com/)
 
 ## Setting up CI/CD
 
